@@ -1,0 +1,815 @@
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=AmericanTypewriter' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Georgia' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=sans serif' rel='stylesheet'>
+<style>
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #037;
+  color: white;
+  
+}
+.fonthead{
+text-shadow: 1px 1px;
+font-size:25px;color:black;font-family:AmericanTypewriter;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.textstyle{
+font-family:Montserrat;
+color:#037;
+font-size:15px;
+padding:10px 20px;}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.top-left {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.active {
+  background-color: #252796;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.back{
+  position: relative;
+  text-align: center;
+  color: white;
+
+}
+.space {
+  padding: 5px;
+  text-align: center;
+  background: #ddd;
+}
+.bt1 {
+	button-align:left;
+  border: none;
+  background-color:#648bc9;
+  padding: 14px 28px;
+  width:250px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 10px;
+      color:white;
+    font-family: Montserrat !important;
+	    font-size: 15px !important;
+		border-radius:100px;
+}
+.btn11 {
+	button-align:left;
+  border: blue;
+  background-color: blue;
+  padding: 14px 28px;
+  width:550px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 10px;
+      color: white;
+    font-family: Montserrat !important;
+	    font-size: 15px !important;
+		border-radius:100px;
+}
+.btn333 {
+	button-align:left;
+  border: none;
+  background-color: white;
+  padding: 14px 28px;
+  width:250px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 10px;
+      color: rgb(16, 28, 115) !important;
+    font-family: Montserrat !important;
+	    font-size: 15px !important;
+		border-radius:100px;
+}
+
+	.btn {
+	button-align:left;
+  border: none;
+  background-color: white;
+  padding: 14px 28px;
+  width:250px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 10px;
+      color: rgb(16, 28, 115) !important;
+    font-family: Montserrat !important;
+	    font-size: 15px !important;
+		border-radius:100px;
+}
+.bt2{
+color: black;
+    font-family: Montserrat ;
+	    font-size: 20px !important;}
+		
+.footer {
+  padding: 5px;
+  height:100px;
+  text-align: center;
+  background: #406eb7;
+}
+.foot{
+text-align:right;}
+.b3{
+
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  color:#0f408e;
+}
+.row3 {  
+  display: flex;
+  flex-wrap: wrap;
+  padding:30px 50px;
+ 
+}
+.outercontainer44
+{   flex: 50%;
+	float:left;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.33);
+	border-radius:40px;
+	background:#dcdee2;	
+}
+.outercontainer4
+{   flex: 50%;
+	float:left;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.33);
+	border-radius:40px;
+	background: #48e7ea;	
+}
+.boreder {
+padding:10px 20px;
+  border-style: double;
+}
+.outercontainer1
+{   flex: 100%;
+	float:center;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.33);
+	padding:10px;
+}
+.s1{color:#101c73;}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+.blue{
+color:#16438c;}
+</style>
+</head>
+<body>
+
+
+ 
+
+<div class="topnav" id="myTopnav">
+<a href="web.html" class="active">Home</a>
+  <a href="cat.html" target="_self">CAT</a>
+  <a href="place.html" target="_self">Campus Placements</a>
+  <a href="gmat.html" target="_self">GMAT</a>
+  <a href="cat.html" target="_self">MAT</a>
+  <a href="gre.html" target="_self">GRE</a>
+  <a href="bankpo.html" target="_self">BANKPO</a>
+  <a href="itcourse.html" target="_self">IT COURSES</a>
+   <a href="results.html" target="_self">RESULTS</a>
+  <a href="contact.html" target="_self">CONTACT US</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div  class="back">
+<img src="https://i2.wp.com/examstop.com/wp-content/uploads/2018/07/Important-Days-and-Dates-for-Bank-exams-SBI-IBPS-NIACL-RRB-RBI.jpg?fit=600%2C400&ssl=1" width="100%" height="350px"></img>
+</div><div class="space"></div><br>
+<marquee>
+<div class="btn11">SPECIAL TRAINING FOR IBPS PO - CALL 9941436511 ASAP. Get placed in Banks.</div></marquee>
+<br>
+<br>
+<div class="space"></div>
+<br><center><div class="boreder"><div class="s1">
+ATTEND CLASSES AGAIN AND AGAIN TILL YOU LEARN ALL THE CHAPTERS THOROUGHLY<br> -NO EXTRA FEES <br>- LOW FEES FOR POOR STUDENTS<br>
+
+PERSONALISED TRAINING BY IIM ALUMNI</div></div></center>
+<br>
+<center><p class="cap2" style="font-size: 25px;color:#101c73;font-family:Alegreya SC;text-align:center;text-transform: capitalize;"><strong>LISTEN TO THE VIDEO RECORDING OF ONE OF OUR SESSION -TRAINS. 
+<br>Click on the link to see the video and then try out the chapter in any aptitude book</strong></p></center>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c34BehS5Lg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><center>Like this we have video recordings of all the chapters and separate video recordings for sums.</center><br>
+</center><div class="space"></div>
+<div class="outercontainer1" style="line-height:1em">
+<p class="cap2" style="font-size: 25px;color:#101c73;font-family:Alegreya SC;text-align:center;text-transform: capitalize;"><strong>Why should you join Dream Chasers</strong></p>
+<div class="boreder"<p style="font-size:18px;color:#000000;font-family:Alegreya SC;text-align:center;font-weight:1;">1.The most important reason for joining a centre is the faculty.
+ In Dream Chasers the training is done by a highly experienced IIM Alumnus who is training students full time and is giving great results year after year. 
+ Ask yourself if you would like to learn from the best faculty or from someone who is free on that day (Check the educational qualification of the faculty 
+ in other centres and you will see the difference)</p>
+</div>
+
+
+<div class="boreder"<p style="font-size:18px;color:#095ae5;font-family:Alegreya SC;text-align:center;font-weight:1;">2.Students have to attend classes till the faculty is
+ satisfied that the students have learnt all the concepts.Here even after the course is over, we ask all the students to come to class and attend the chapters again and again 
+ till we are satisfied and the students are satisfied. We will not send the student away saying the topics have been done or so many hours are over but we will keep training
+ them till they become good.(Even if it takes twice the normal duration or thrice the normal duration ,they have to attend till they learn all concepts). Hundreds of students
+ have got results as this is not done by other centres. Other centres have fixed duration like 6 weeks after which the students should leave.
+Here we make students come for 3 or 4 months also if required and make them successful.</p>
+</div>
+
+<div class="boreder"<p style="font-size:18px;color:#000000;font-family:Alegreya SC;text-align:center;font-weight:1;">3.Personalised attention is given to all the students in the class .Everyday ,we will give the students a target to finish and come before the next class which if followed will give results. We will follow up with each student on how much they have finished</p>
+</div>
+
+<div class="boreder"<p style="font-size:18px;color:#095ae5;font-family:Alegreya SC;text-align:center;font-weight:1;">4.Revision of basic concepts for weak students at no extra fees..</p>
+</div>
+
+
+
+<div class="boreder"<p style="font-size:18px;color:#000000;font-family:Alegreya SC;text-align:center;font-weight:1;">5.
+Excellent Feedback of old students.See feedback of our old students by going to the feedback section.</p>
+</div>
+
+<div class="boreder"<p style="font-size:18px;color:#095ae5;font-family:Alegreya SC;text-align:center;font-weight:1;">6.Free demo class for you to assess the faculty . Then you can pay. So you can be sure there is no risk .</p>
+</div>
+
+<div class="boreder"<p style="font-size:18px;color:#000000;font-family:Alegreya SC;text-align:center;font-weight:1;">7.Video recordings of all important chapters are there in our centre. The student can view the video in the centre and revise tough chapters many times. No other centre offers this.</p>
+</div>
+
+<div class="boreder"<p style="font-size:18px;color:#095ae5;font-family:Alegreya SC;text-align:center;font-weight:1;">8.15 hours every week till you become good. By attending so many hours every week,you will surely become good. In 1 month you would have attended 60 hours in class and you can attend more till you become good at no extra fees</p>
+</div>
+
+<div class="boreder"<p style="font-size:18px;color:#000000;font-family:Alegreya SC;text-align:center;font-weight:1;">9.Special sessions on banking awareness from the basics
+</p>
+</div></div>
+
+<p style="font-size:22px;font-family:Montserrat;text-align:center;padding:10px;color:#062966;">
+What more do you want ????? <br></p><p style="font-size:18px;font-family:Montserrat;text-align:center;padding:10px;color:#095ae5;">If you find something that we are not doing but our competitors are doing ,kindly tell us. We will try to add that also.
+
+Do not take risk and join some centre where you do not even know which faculty will be taking classes. Contact us at 9941436511 for more information
+
+If you are coming from a financially disadvantaged background /physically challenged /widow do not lose hope.Just call us. We will verify what you say and if we find your case to be genuine ,we will work out something.Do call us ..
+</p>
+
+<div class="space"></div><br>
+<table border="1" cellpadding="10" cellspacing="0">
+<tbody>
+				<tr>
+					<td>
+						<p>
+							&nbsp;</p>
+					</td>
+					<td>
+						<p>
+							<strong>Dream Chasers</strong></p>
+					</td>
+					<td>
+						<p>
+							<strong>Others</strong></p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<strong>Training by IIM Alumnus </strong></p>
+					</td>
+					<td>
+						<p>
+							Important chapters are taught by an IIM Alumnus who has done the prestigious <strong>full time MBA from IIM</strong></p>
+					</td>
+					<td>
+						<p>
+							Some trainers join <strong>part time MBA</strong> from IIM and try to create an impression that they are very good. Many students do not know the difference in the courses studied by the faculty and get cheated</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<strong>Video Recordings &nbsp;in English</strong></p>
+					</td>
+					<td>
+						<p>
+							All topics(Concepts and sums) in Quantitative Aptitude are recorded so that students can <strong>listen to it again and again</strong> and revise all topics</p>
+					</td>
+					<td>
+						<p>
+							Not present in other institutes</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<strong>Video Recordings in Tamil</strong></p>
+					</td>
+					<td>
+						<p>
+							To help tamil medium students,all sums are <strong>recorded in tamil (also&nbsp; English</strong> ) so that they can learn easily</p>
+					</td>
+					<td>
+						<p>
+							Not present in other institutes</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<strong>Scholarships for poor students</strong></p>
+					</td>
+					<td>
+						<p>
+							Discount is given depending on parents income. For poor students we will give big discounts(<strong>even 100% scholarship for students from poor families</strong>)</p>
+						<p>
+							Many students have been trained at very low fees and some free of charge too.</p>
+					</td>
+					<td>
+						<p>
+							No discounts in most centres</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<strong>Speed Tests on Individual topics</strong></p>
+					</td>
+					<td>
+						<p>
+							&nbsp;<strong>Yes</strong>. &nbsp;So that you can identify your areas where you must become faster</p>
+					</td>
+					<td>
+						<p>
+							Not present in most institutes</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<strong>Full Length tests </strong></p>
+					</td>
+					<td>
+						<p>
+							&nbsp;<strong>Yes</strong></p>
+					</td>
+					<td>
+						<p>
+							Not present in most institutes</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<strong>Separate batch for weak students</strong></p>
+					</td>
+					<td>
+						<p>
+							<strong>Yes</strong>.&nbsp; After discussing with the person,if the person is weak in Maths,we will train them in special batches where all the students are of the same level.</p>
+					</td>
+					<td>
+						<p>
+							All students will sit in same batch. So many of them will not be able to follow properly</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<strong>&nbsp;Special help for Tamil medium students</strong></p>
+					</td>
+					<td>
+						<p>
+							<strong>Yes. </strong></p>
+					</td>
+					<td>
+						<p>
+							No</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<strong>Long term and short term courses</strong></p>
+					</td>
+					<td>
+						<p>
+							<strong>Both are available</strong>. Students who are not in touch with topics can join long term course(No extra fees) so that they can learn all topics at their own pace</p>
+					</td>
+					<td>
+						<p>
+							Same course for everybody</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<strong>Banking awareness class</strong></p>
+					</td>
+					<td>
+						<p>
+							Yes- Topics <strong>from Basics</strong> will be taught</p>
+					</td>
+					<td>
+						<p>
+							Present in some institutes</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<strong>Number of hours of class</strong></p>
+					</td>
+					<td>
+						<p>
+							<strong>Till you learn all topics thoroughly</strong>. You can attend classes for 12 months again and again. (No extra fees)</p>
+					</td>
+					<td>
+						<p>
+							Fixed number of hours . Once class is over you can attend the same class</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<strong>Attending same topics again</strong></p>
+					</td>
+					<td>
+						<p>
+							You can attend tough topics again and again in different batches.</p>
+					</td>
+					<td>
+						<p>
+							No</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<strong>Attending the missed classes</strong></p>
+					</td>
+					<td>
+						<p>
+							If you miss any class,you can join in another batch and attend the same topic</p>
+					</td>
+					<td>
+						<p>
+							You cannot attend in another batch</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<strong>Audio files for words </strong></p>
+					</td>
+					<td>
+						<p>
+							500 words recorded with meaning will be given so that you can improve your vocabulary</p>
+					</td>
+					<td>
+						<p>
+							No</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<strong>Class room study</strong></p>
+					</td>
+					<td>
+						<p>
+							You can sit in class 4 hours a day (apart from class timings )and study on weekdays till you learn all topics</p>
+					</td>
+					<td>
+						<p>
+							No</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<strong>Fundamental Maths</strong></p>
+					</td>
+					<td>
+						<p>
+							<strong>Yes. All fundamental topics will be taught</strong>&nbsp; and videos will be given to students to see at home</p>
+					</td>
+					<td>
+						<p>
+							No in most centres</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<strong>Personalised attention</strong></p>
+					</td>
+					<td>
+						<p>
+							<strong>Individual targets</strong> will be given for students based on their areas of strength and weakness</p>
+					</td>
+					<td>
+						<p>
+							General targets for everyone .</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<strong>Batch size</strong></p>
+					</td>
+					<td>
+						<p>
+							<strong>Small batch –only 15 students</strong> .</p>
+						<p>
+							Large batches are also there</p>
+					</td>
+					<td>
+						<p>
+							Mostly large batch. So very less personal attention.The faculty will not even know your name and your strong and weak areas</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<strong>Free Demo Class</strong></p>
+					</td>
+					<td>
+						<p>
+							Yes .</p>
+					</td>
+					<td>
+						<p>
+							Present in some institutes</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+<div class="row3">
+<div class="outercontainer4">
+<p style="font-size:17px;color:#ffffff;font-family:Montserrat;text-align:center;font-weight:600;">
+A LOT OF PEOPLE HAVE COME TO OUR CLASSES AND HAVE ACHIEVED THEIR DREAMS <br>AFTER SEARCHING FOR CENTRES ON THE INTERNET AND DISCOVERING OUR CENTRE.<br>
+ YOU HAVE READ THIS MUCH. ATTEND OUR DEMO CLASSES.<br>ONLY THEN YOU WILL KNOW WHY WE ARE THE BEST IN WHAT WE DO. <br>
+ OTHERWISE YOU WOULD HAVE MISSED A BIG OPPORTUNITY.ALL YOU HAVE TO DO IS <br>SPEND AN HOUR AND IT MIGHT CHANGE YOUR LIFE. GIVE US ONE HOUR OF YOUR TIME.<br>
+ CALL US AT 9941436511 ASAP.<br>YOU HAVE NOTHING TO LOSE AND EVERYTHING TO GAIN .<br>GREAT DECISIONS CHANGE LIVES. <br>JOINING US WILL CHANGE YOURS
+
+</div></div></p>
+
+
+
+<div style="background-color:white; color:#000066; padding:10px;align=" "">
+<p style="font-weight: bold; font-size: 20px; strong style=color:#666;"> Quantitative Aptitude (Topics we will cover in class)</p></div>
+<p style="font-weight: bold; font-size: 20px;"><ul style="list-style-type:square;"><div class="textstyle"><li>Ages<br>
+<li>Numbers<br>
+<li>Percentages<br>
+<li>Ratio and Proportion<br>
+<li>Profit and loss<br>
+  <li>Averages,Mixtures<br>
+<li>Alligations<br>
+<li>Time and Distance<br>
+<li>Trains<br>
+<li>Boats and Streams<br>
+<li>Time and Work<br>
+<li>Probability<br>
+<li>Permutation and Combinations<br>
+<li>Simple Interest and Compound Interest<br>
+<li>Data Sufficiency<br>
+<li>Data Intepretation and Analysis <br></p>
+<p style="font-weight: bold; font-size: 13px;">
+Call us at 9941436511 for more details. You will never get this personalised attention in any other class  <br></p></div>
+<div style="background-color:white; color:#000066; padding:10px;align=" "">
+<p style="font-weight: bold; font-size: 20px; strong style=color:#666;"> Reasoning, Verbal and Banking awareness</p></div>
+<p style="font-weight: bold; font-size: 20px;"><ul style="list-style-type:square;"><div class="textstyle">
+<li>Syllogism
+<li>Alphabet test
+<li>Series Test
+<li>Mathematical Operations
+<li>Analogy
+<li>Classification
+<li>Numbers,Ranking and Time Sequence Test
+<li>Coding -Decoding
+<li>Cause and Effect
+<li>Directions 
+<li>Blood Relations
+<li>Seating Arrangements 
+<li>Word/letter arrangements
+<li>Ranking Arrangement
+<li>Input/Output
+<li>Decision Making
+<li>Analytical Reasoning 
+<li>Statement and Conclusions
+<li>Statement and Assumptions
+<li>Statement and Arguments
+<li>Statement and Course of Action
+<li>Reading Comprehension
+<li>Antonyms 
+<li>Synonyms
+<li>Sentence Ordering
+<li>Grammar/Spotting Errors
+<li>Special session on banking awareness</ul></p>
+<p style="font-weight: bold; font-size: 13px; color:#000066">
+Call us at 9941436511 for more details. You will never get this personalised attention in any other class </p></div>
+<div class="row3">
+<div class="outercontainer44">
+<div class="bt2"><center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+ Detailed FEEDBACK/TESTIMONIALS of Old Students <br>
+(With details of their College, Department and Batch)</p><button class="b3" onclick="location.href='feedback.html';"> Click Here</button></div></div></div></div>
+<div class="space"></div>
+
+<div style="overflow-x:auto;">
+  <table>
+    <tr>
+      
+      <th><center>SPECIAL BATCH FOR THOSE WHO ARE SEARCHING FOR A JOB/TAMIL MEDIUM STUDENTS
+
+</th>
+      
+     
+    </tr>
+    <tr>
+      <td>We are conducting special classes for those who have passed out in 2013 or earlier and are staying at home full time and preparing.
+	  They will have to come from Monday to Friday and sit in our centre for 5 hours everyday and study.
+	  Some students come and sit in our centres from Morning to evening and study. 
+	  Apart from these they will have to attend one of our batches either Morning/evening/weekend .
+	  If they are very weak/out of touch,they will have to attend the slow batch/tamil medium students batch.
+	  Many students have a lot of distraction at home and are unable to conncentrate at home.
+	  They want to work hard but relatives/phone calls/visitors/friends might disturb them.
+	  So for such people,we ask them to come everyday to our centre and we will give them a plan everyweek
+	  .When they sit with our students who are preparing ,they will also study hard.
+	  This will also force the students to work everyday without distraction.There will be NO extra fees for this batch.</td>
+     </tr>
+   </table></div>
+   
+   
+   <div style="overflow-x:auto;">
+  <table>
+    <tr>
+      
+      <th><center> SPECIAL REFRESHER COURSE FOR WEAK STUDENTS/COMMERCE STUDENTS AND THOSE WHO ARE NOT IN TOUCH WITH MATHS
+
+</th>
+      
+     
+    </tr>
+    <tr>
+      <td>
+   
+  There are many housewives/students who have not done Maths for a very long time. Some of them have not done Maths after class X and because of the break,they are very afraid of writing the bank exams. Also some students were very weak in Maths at school.We are having a special refresher course for all such students where we will revise concepts that were taught from Class VI to class X from the basics
+
+</td></tr><tr><td>
+ These classes will be for 15 to 20 hours .This will be conducted at separate timings specifically to revise all the basic concepts.
+
+</td></tr><tr><td>
+ We will do the concepts that are done from Class VI to Class X based on how weak the student is. After teaching the concepts
+ ,We will give worksheets that will test the person on concepts like order of operations,basic algebra, linear equation,basic quadratic 
+ equation,addition/subtraction of fractions ,division of one fraction by another etc.,prime factorisation, basic hcf/lcm ,arithmetic properties like com
+ mutative law/associative law of addition multiplication etc .This will be done based on areas on which the individual is weak..
+</td></tr><tr><td>
+
+ They will have to come for 5 days a week for 5 hours everyday and sit and class and work out all the sums and take tests. NO EXTRA FEES for this class
+
+</td></tr><tr><td>
+ This is for people who have secured anywhere from 50 percent to 70 percent in Maths at school
+
+</td></tr><tr><td>
+ This will be a highly personalised training and we will identify the weak areas after discussing with the student on a one on one basis
+</td></tr><tr><td>
+
+ Call us at 9941436511 for more details. You will never get this personalised attention in any other class
+   
+   </td></tr>
+   </div></table><br>
+<div class="space"></div>   
+ <p class="cap1" style="font-size: 35px;color:#101c73;font-family:Alegreya SC;text-align:center;text-transform: capitalize;"><strong>VERY LOW FEES FOR FINANCIALLY DISADVANTAGED STUDENTS</strong></p>
+
+<p style="color:#101c73">
+If you are coming for a very low income family and cannot afford the fees,kindly call us at 9941436511. 
+We will give you a lot of discount .Do not hesitate to call . You must be willing to work hard and attend classes everyday.
+ If your father/mother is a watchman/coolie/maid/sweeper/low income earning farmer/weaver/daily wage earner or if you do not have parents/father 
+ then you can apply for full scholarship with Lakshmi and Subramanian Foundation (CSR arm of Dream Chasers -Call us at 9941436511) .
+We will do some background check and if we find your case to be genuine,we will provide you free training .
+Check Lakshmi and Subramanian Foundation in Facebook.</p>
+   
+ <div class="space"></div>  
+ 
+ 
+ 
+  <center><p class="cap" style="font-size: 28px;font-weight:400;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">Students Feedback</p>
+<p><center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+Sathish - Placed in State Bank Of India <br>
+PSG College of Technology, coimbatore  </p></p>
+<center><div class="textstyle">
+Hi , I am Sathish. I am currently working with State Bank of India as a probationary officer. I joined the classes a year ago. As i was working in a software industry, i needed an institution which would provide special care and attention to every student and giving space and time to build on their own strengths and weakness. And i am glad that both my expectations were met here. I have seen people giving you a set of question Papers and asked you solve only those questions without even explaining or provide you with some booklets (not even updated) with that their job is done. At the best you will get to take few tests. They will never even care about you and how you are progressing. Contrary to that here you have an oppurtunity to get different materials (printed and video) to learn and practice. There are many practice sets available in the class rooms, you can use those materials any number of times any day. The door will be always opened for you, which you never get anywhere. Even he (SriGanesh) will get new books (for the institution only :0 ), if you find a good one available in the market and suggest him to buy. And the most important thing there is no time limit for your course, you can avail his service till you get satisfied with your performances. Careerwise you can get lot of good advices and directions from him. One more good thing is he is always open for your suggestions, irrespective of your age and position. People may think I am exaggerating, but these are my own experiences with the institution for the past one year. 
+If you see this message, then you are ended in the right place. Grab this opportunity with both hands. Follow your own instincts not others.</div>
+<center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+Lourdhu ilakya - Cleared SBI PO 
+2013 batch </p>
+<center><div class="textstyle">I joined dream chasers in Jan 2008 for my placement training as advised by many of my seniors and friends. Only after I started taking classes from Sri Ganesh sir, I did understand the truth behind what they had said. His method of teaching is exceptional. At Dream chasers we are allowed to attend classes for various topics until we are confident of that topic. Our sir did not just stop with teaching us concepts but also motivated us to solve as many number problems as we could. He also taught us interpersonal skills,Grammar usages in English for competitive exams, and I got placed in Infosys Technologies. When I decided to give SBI PO,I attended his classes and followed all his guidance and I cleared the written examination conducted on April 28,2013.
+ My sincere advice for anyone aspiring to clear any competitive exams is to just take his guidance and achieve whatever they want to.</div>
+<div class="space"></div> 
+<p class="cap" style="font-size: 28px;font-weight:400;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">  Free Videos to learn</p>
+  
+<button class="btn333" onclick="location.href='https://www.youtube.com/watch?v=SEmaEidTOtg';">RBI </button>   
+   
+ <button class="btn333"     onclick="location.href='http://www.youtube.com/watch?v=sBtCPABPsV8';">Cash Reserve ratio </button>  
+
+
+ <button class="btn333" onclick="location.href='http://www.youtube.com/watch?v=hzFRX7ivTzo';">Bank rate  </button>    
+   
+ <button class="btn333" onclick="location.href='http://www.youtube.com/watch?v=pm6zndBjiHs';">Repo rate and reverse repo rate   </button>  
+<button class="btn333" onclick="location.href='http://www.youtube.com/watch?v=TZ809J3W1OM';">Monetary policy  </button>    
+   
+ <button class="btn333" onclick="location.href='http://www.youtube.com/watch?v=PT5eGTrSIUs';">Difference between repo rate and reverse repo rate </button>   
+
+
+ <button class="btn333" onclick="location.href='http://www.youtube.com/watch?v=6QPD301FHQo';">Open market operations  </button>     
+   
+ <button class="btn333" onclick="location.href='http://www.youtube.com/watch?v=Xjz1AEQO2R4';">Securities  </button>  
+
+
+
+
+ <button class="btn333" onclick="location.href='http://www.youtube.com/watch?v=M3D6pfIRaRA';">
+Statutory Liquidity ratio  
+   </button>  
+<div class="space"></div> 
+<center><p class="cap" style="font-size: 28px;font-weight:400;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">Students Feedback</p>
+
+<p><center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+Arul Vel Arasan
+ 	 
+ 	
+IIFT (2010-2012 batch)<br> Panimalar College of Engg. (2008 batch C.Sc)
+<center><div class="textstyle">I am Arul. I am working in Cognizant Technology Solutions as a Software engineer.If 
+	I would have not met a great person named Mr. Sriganesh of Dream Chasers at right time I
+	would have been a normal Software engineer throughout my life without having any big goals to achieve. Yes, its true. I know Mr. Sriganesh for the past 6 years. Its he who motivated me to take CAT and top B-School exams. Initially I thought that I could not clear such difficult exams because of my not so good educational background. But he is a dynamic force of motivation, and whenever I speak to him I felt much more motivated and he made me to improve in all aspects. I can say he is a maestro in Maths, English, Group discussion and Interview training. Yes, its because of him I have got final admission in one of the reputed B-Schools IIFT(Indian Institute Of Foreign Trade) for MBA in International Business. In my family I am the first person to get a top B-School admission. I know very well that it is Mr. Sriganesh who created a new and competitive destiny for me. I have never seen such a capable person like Mr.Sriganesh. It is he who gave me moral support and training throughout my tiring journey. I am very happy to say that he is the person who made me join the elite group of B-School league. Mr. Sriganesh is a person who makes significant changes in people`s life! Yes, if anyone would like to achieve great goals like clearing CAT and competitive exams Dream Chasers is a best place to get trained, as you get trained directly from IIM Calcutta alumni Mr.Sriganesh. I am very sure that you will never get trained in any other institute directly from IIM graduates.
+
+</div>
+
+ 	<div class="footer">
+<button class="btn"onclick="location.href='results.html';" >FOR MORE FEEDBACKS</button>
+<div class="foot"> © 2006 Dream Chaser | Design by dreamchaser
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

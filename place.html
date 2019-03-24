@@ -1,0 +1,831 @@
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=AmericanTypewriter' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Georgia' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=sans serif' rel='stylesheet'>
+<style>
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #037;
+  color: white;
+  
+}
+.fonthead{
+text-shadow: 1px 1px;
+font-size:25px;color:black;font-family:AmericanTypewriter;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.textstyle{
+font-family:Montserrat;
+color:#037;
+font-size:15px;
+padding:10px 20px;}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.top-left {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.active {
+  background-color: #252796;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.back{
+  position: relative;
+  text-align: center;
+  color: white;
+
+}
+.space {
+  padding: 5px;
+  text-align: center;
+  background: #ddd;
+}
+.bt1 {
+	button-align:left;
+  border: none;
+  background-color:#648bc9;
+  padding: 14px 28px;
+  width:250px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 10px;
+      color:white;
+    font-family: Montserrat !important;
+	    font-size: 15px !important;
+		border-radius:100px;
+}
+	.btn {
+	button-align:left;
+  border: none;
+  background-color: white;
+  padding: 14px 28px;
+  width:250px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 10px;
+      color: rgb(16, 28, 115) !important;
+    font-family: Montserrat !important;
+	    font-size: 15px !important;
+		border-radius:100px;
+}
+.bt2{
+color: black;
+    font-family: Montserrat ;
+	    font-size: 20px !important;}
+		
+.footer {
+  padding: 5px;
+  height:100px;
+  text-align: center;
+  background: #406eb7;
+}
+.btn333 {
+	button-align:left;
+  border: none;
+  background-color: white;
+  padding: 14px 28px;
+  width:250px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 10px;
+      color: rgb(16, 28, 115) !important;
+    font-family: Montserrat !important;
+	    font-size: 15px !important;
+		border-radius:100px;
+}
+.foot{
+text-align:right;}
+.b3{
+
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  color:#0f408e;
+}
+.row3 {  
+  display: flex;
+  flex-wrap: wrap;
+  padding:50px;
+}
+.outercontainer4
+{   flex: 100%;
+	float:left;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.33);
+	border-radius:10px;
+	background: #dcdee2;	
+}
+.textstyle1{
+font-family:Montserrat;
+color:#037;
+font-size:17px;
+padding:10px 20px;}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.boreder {
+padding:10px 20px;
+  border-style: double;
+}
+.outercontainer1
+{   flex: 100%;
+	float:center;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.33);
+	padding:10px;
+}
+</style>
+</head>
+<body>
+
+
+ 
+
+<div class="topnav" id="myTopnav">
+<a href="web.html" class="active">Home</a>
+  <a href="cat.html" target="_self">CAT</a>
+  <a href="place.html" target="_self">Campus Placements</a>
+  <a href="gmat.html" target="_self">GMAT</a>
+  <a href="cat.html" target="_self">MAT</a>
+  <a href="gre.html" target="_self">GRE</a>
+  <a href="bankpo.html" target="_self">BANKPO</a>
+  <a href="itcourse.html" target="_self">IT COURSES</a>
+   <a href="results.html" target="_self">RESULTS</a>
+  <a href="contact.html" target="_self">CONTACT US</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div  class="back">
+<img src="http://agmrcet.ac.in/web/images/slide/slide5.jpg" width="100%" height="400px"></img>
+
+<div class="space"></div></div><br><br><marquee>
+FREE DEMO - ATTEND A DEMO CLASS AND JOIN IF YOU ARE SATISFIED - CALL US AT 9941436511</marquee>
+<div class="textstyle1"><center>ATTEND CLASSES AGAIN AND AGAIN TILL YOU LEARN ALL THE CHAPTERS THOROUGHLY <br>-NO EXTRA FEES - LOW FEES FOR POOR STUDENTS<br>
+
+PERSONALISED TRAINING BY IIM ALUMNI</div>
+<center>
+<div class="space"></div>LISTEN TO THE VIDEO RECORDING OF ONE OF OUR SESSIONS -TRAINS. <br>Click on the link to see the video .<br>
+This is a video on the fundamentals of a small part of Time and Distance.<br>Like this ,every concept has been recorded.Attend a free demo for an advanced class.
+ 	<br><iframe width="460" height="315" src="https://www.youtube.com/embed/c34BehS5Lg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+	Like this we have video recordings of all the chapters and separate video recordings of 1200 CAT questions that have appeared in the last 15 years
+	
+<div class="space"></div>
+	<div class="outercontainer1" style="line-height:1em">
+<p class="cap2" style="font-size: 25px;color:#101c73;font-family:Alegreya SC;text-align:center;text-transform: capitalize;"><strong>Why should you join Dream Chasers</strong></p>
+<div class="boreder"<p style="font-size:18px;color:#000000;font-family:Alegreya SC;text-align:center;font-weight:1;">1.The most important reason for joining a centre is the faculty. In Dream Chasers the training is done by a highly experienced IIM Alumnus who is training students full time and is giving great results year after year. Ask yourself if you would like to learn from the best faculty or from someone who is free on that day (Check the educational qualification of the faculty in other centres and you will see the difference)
+	</div></p>
+<div class="boreder"<p style="font-size:18px;color:#095ae5;font-family:Alegreya SC;text-align:center;font-weight:1;">2.Students have to attend classes till the faculty is satisfied that the students have learnt all the concepts.Here even after the course is over, we ask all the students to come to class and attend the chapters again and again till we are satisfied and the students are satisfied. We will not send the student away saying the topics have been done or so many hours are over but we will keep training them till they become good.(Even if it takes twice the normal duration or thrice the normal duration ,they have to attend till they learn all concepts). Hundreds of students have got results as this is not done by other centres. Other centres have fixed duration like 6 weeks after which the students should leave.Here we make students come for 3 or 4 months also if required and make them successful.
+</div></p>
+<div class="boreder"<p style="font-size:18px;color:#000000;font-family:Alegreya SC;text-align:center;font-weight:1;">3.Personalised attention is given to all the students in the class .Everyday ,we will give the students a target to finish and come before the next class which if followed will give results. We will follow up with each student on how much they have finished
+</div></p>
+<div class="boreder"<p style="font-size:18px;color:#095ae5;font-family:Alegreya SC;text-align:center;font-weight:1;">4.Revision of basic concepts for weak students at no extra fees..
+</div></p>
+<div class="boreder"<p style="font-size:18px;color:#000000;font-family:Alegreya SC;text-align:center;font-weight:1;">5.Excellent Feedback of old students.See feedback of our old students by going to the feedback section
+</div></p>
+ <div class="boreder">
+<button class="btn333" onclick="location.href='results.html';">CLICK HERE </button> 
+<p style="font-size:18px;color:#095ae5;font-family:Alegreya SC;text-align:center;font-weight:1;">FOR FEEDBACK OF OLD STUDENTS WITH DETAILS OF THEIR COLLEGE ,DEPARTMENT AND BATCH
+</div></p>
+<div class="boreder"<p style="font-size:18px;color:#000000;font-family:Alegreya SC;text-align:center;font-weight:1;">6.Free demo class for you to assess the faculty . Then you can pay. So you can be sure there is no risk .
+</div></p>
+<div class="boreder"<p style="font-size:18px;color:#095ae5;font-family:Alegreya SC;text-align:center;font-weight:1;">7.Video recordings of all important chapters are there in our centre. The student can view the video in the centre and revise tough chapters many times. No other centre offers this
+</div></p>
+<div class="boreder"<p style="font-size:18px;color:#000000;font-family:Alegreya SC;text-align:center;font-weight:1;">8.15 hours every week till you become good. By attending so many hours every week,you will surely become good. In 1 month you would have attended 60 hours in class and you can attend more till you become good at no extra fees
+</div></p></div>
+
+
+<p style="font-size:22px;font-family:Montserrat;text-align:center;padding:10px;color:#062966;">
+What more do you want ????? <br></p><p style="font-size:18px;font-family:Montserrat;text-align:center;padding:10px;color:#095ae5;">If you find something that we are not doing but our competitors are doing ,kindly tell us. We will try to add that also.
+
+Do not take risk and join some centre where you do not even know which faculty will be taking classes. Contact us at 9941436511 for more information
+
+If you are coming from a financially disadvantaged background /physically challenged /widow do not lose hope.Just call us. We will verify what you say and if we find your case to be genuine ,we will work out something.Do call us ..
+</p>
+
+
+<div class="row3">
+<div class="outercontainer4">
+<p style="font-size:17px;color:black;font-family:Montserrat;text-align:center;font-weight:600;">
+A LOT OF PEOPLE HAVE COME TO OUR CLASSES AND HAVE ACHIEVED THEIR DREAMS <br>AFTER SEARCHING FOR CENTRES ON THE INTERNET AND DISCOVERING OUR CENTRE.<br>
+ YOU HAVE READ THIS MUCH. ATTEND OUR DEMO CLASSES.<br>ONLY THEN YOU WILL KNOW WHY WE ARE THE BEST IN WHAT WE DO. <br>
+ OTHERWISE YOU WOULD HAVE MISSED A BIG OPPORTUNITY.ALL YOU HAVE TO DO IS <br>SPEND AN HOUR AND IT MIGHT CHANGE YOUR LIFE. GIVE US ONE HOUR OF YOUR TIME.<br>
+ CALL US AT 9941436511 ASAP.<br>YOU HAVE NOTHING TO LOSE AND EVERYTHING TO GAIN .<br>GREAT DECISIONS CHANGE LIVES. <br>JOINING US WILL CHANGE YOURS
+
+</div></div></p>
+
+<p class="cap1" style="font-size: 35px;color:#101c73;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+Our Course Details for Campus Placement Training<br></p>
+
+<p class="cap1" style="font-size: 25px;color:#101c73;font-family:Alegreya SC;text-align:left;text-transform: capitalize;">
+Quantitative Aptitude (Topics we will cover in class) </p><div class="textstyle">
+<ul style="list-style-type:square; text-align:left;"><li>Ages
+<li>Numbers
+<li>Percentages
+<li>Ratio and Proportion
+<li>Profit and loss
+<li>Averages,Mixtures
+<li>Progressions
+<li>Alligations
+<li>Time and Distance
+<li>Trains
+<li>Boats and Streams
+<li>Time and Work
+<li>Probability
+<li>Permutation and Combinations
+<li>Simple Interest and Compound Interest
+<li>Clocks 
+<li>Calenders 
+<li>Mensuration
+<li>Venn Diagram 
+<li>Dice 
+<li>Data Sufficiency
+<li>Data Intepretation and Analysi
+</ul>
+<p style="text-align:left;">SPECIAL WEEKDAY BATCH FOR THOSE WHO ARE SEARCHING FOR A JOB .<br>Call us at 9941436511 for details regarding this<br>
+
+Call us at 9941436511 for more details. You will never get this personalised attention in any other class </p>
+
+</div>
+
+
+<p class="cap1" style="font-size: 25px;color:#101c73;font-family:Alegreya SC;text-align:left;text-transform: capitalize;">
+Reasoning and Verbal (Topics we will cover in class) </p><div class="textstyle">
+<ul style="list-style-type:square; text-align:left;"><li>
+
+
+Syllogism<li>
+Alphabet test<li>
+Series Test<li>
+Mathematical Operations<li>
+Analogy<li>
+Classification<li>
+Numbers,Ranking and Time Sequence Test<li>
+Coding -Decoding<li>
+Cause and Effect<li>
+Directions <li>
+Blood Relations<li>
+Seating Arrangements<li> 
+Word/letter arrangements<li>
+Ranking Arrangement<li>
+Input/Output<li>
+Decision Making<li>
+Analytical Reasoning<li>
+Statement and Conclusions<li>
+Statement and Assumptions<li>
+Statement and Arguments<li>
+Statement and Course of Action<li>
+Reading Comprehension<li>
+Antonyms <li>
+Synonyms<li>
+Sentence Ordering<li>
+Grammar/Spotting Errors</ul>
+<p style="text-align:left;">Call us at 9941436511 for more details. You will never get this personalised attention in any other class <div>
+
+<div class="space"></div>   
+ <p class="cap1" style="font-size: 35px;color:#101c73;font-family:Alegreya SC;text-align:center;text-transform: capitalize;"><strong>VERY LOW FEES FOR FINANCIALLY DISADVANTAGED STUDENTS</strong></p>
+
+<p style="color:#101c73">
+If you are coming for a very low income family and cannot afford the fees,kindly call us at 9941436511. 
+We will give you a lot of discount .Do not hesitate to call . You must be willing to work hard and attend classes everyday.
+ If your father/mother is a watchman/coolie/maid/sweeper/low income earning farmer/weaver/daily wage earner or if you do not have parents/father 
+ then you can apply for full scholarship with Lakshmi and Subramanian Foundation (CSR arm of Dream Chasers -Call us at 9941436511) .
+We will do some background check and if we find your case to be genuine,we will provide you free training .
+Check Lakshmi and Subramanian Foundation in Facebook.</p>
+	</p>
+<div class="space"></div> 	
+<div class="textstyle">
+	
+	We would like to share commonly asked questions in the HR interview and answers that would be appropriate in the interview.
+
+Here are the links to the HR interview questions.
+	</div>
+	<br>
+	<center>
+	<br>
+	
+<div class="space">HR Interview questions Part 1</div>
+	<iframe width="460" height="315" src="https://www.youtube.com/embed/v033U4RFqa4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<br>
+<div class="space">HR Interview questions Part 2</div>
+	<center>
+	<br>
+<iframe width="460" height="315" src="https://www.youtube.com/embed/hn1X7MC0SXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="space">HR Interview questions Part 3</div>	
+	<center>
+	<div class="space"></div>
+	<br>
+	<iframe width="460" height="315" src="https://www.youtube.com/embed/uSnS4loqgQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	<div class="space"></div> 
+	
+	<center><p class="cap" style="font-size: 28px;font-weight:400;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">Students Feedback</p>
+<p><center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+
+Kavitha Subramanian - Placed in Infosys, Cognizant solutions and Wipro. <br>
+Crescent University  </p></p>
+<center><div class="textstyle">
+I joined placement training by June 1st week and was very much worried about placements as i was completely blank on the various aptitude problems and logical questions. The time left with me was also very low, so i was very much worried. But i was clarified and Sri Ganesh sir is just awesome. He made me confident to attend interviews. On the day of placements i could find myself a step ahead from others , its because i was able to solve the aptitude problems and logical questions very easily while the others were suffering and i taught them the easy methods which sir taught me!! As the name says, this institute really made me to realize my long term dream. I chased my dreams and dreamchasers made it true. All the best freshers. THANK U SO MUCH SIR!! PROUD TO BE UR STUDENT!!!!</div>
+<center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+S.Aravindkumar - Placed in CTS <br>
+SRM University kattankulathur campus 2015 batch  </p>
+<center><div class="textstyle">
+Thanks to Ganesh sir for encouraging me starting from first year till nw and dream chasers academy is always brings out special talents from various college and club together at one place so it gives an immense opportunity for the students like me to overcome stage fear and to figure out the ideas in solving the problem and to put the methods in different platforms nw i got placed so the basic root step is given by Ganesh sir here by i thank him for the moral support and also his valuable time given for our students!!!!!!!!!!!!!!
+</div>
+
+<center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+Monisha - Placed in HCL <br>
+Panimalar engineering college (2011 - 2015 BATCH) 
+ </p>
+<center><div class="textstyle">
+I joined Dream chasers academy a couple of months before the placement process stared in my college ,but within this short period of time Mr.Sri Ganesh sir helped me to learn all the basics in apptitue ,english and reasoning which helped me a lot to get placed ,i am really happy to be a student of Dream chasers academy
+
+</div>
+
+<center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+Jaya Priya Radhakrishnan - Placed in INFOSYS 
+Srinivasa Institute of Engg & technology 2014 batch
+ </p>
+<center><div class="textstyle">
+Hi , I am Jaya Priya.R pursuing B.E (cse-2010 to 2014 batch ) . I have joined DREAM CHASERS after finishing my 6th semester. And I undergone placement training class for a period of nearly 3 to 4 months( only on Sundays) . Sriganesh sir taught me each and every concepts in clear manner and then many shortcuts and easy way of solving apps which helped me a lot to complete the aptitude round in the off campus selection process in quick manner . He used to motivate the students by his inspiring words and provides personal care to students in clarifying their doubts. Recently I got placed in INFOSYS, which is my dream concern. I achieved it becoz of the training I hav undergone in DREAM CHASERS. Feeling lucky and proud to be a part of DREAM CHASERS. And I thank sriganesh sir who trained and helped me to achieve this SUCCESS. Thanks a lot sir..
+
+
+</div>
+
+<center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+Sathya Priya - Placed in TCS <br>
+Adhiparasakthi Engineering College 2009 batch 
+ </p>
+<center><div class="textstyle">
+I have undergone training in this (DREAM CHASERS) centre for placement, which covered aptitude, English and technical. The aptitude session was really useful and interactive when compared to practicing our self. We were taken individual care through which we were able to find our strong and weak chapters which made us to practice more . We were not only taught to find the correct answer , we were also taught to find the correct answers , within the time limit. Practise tests were also conducted in the class and the answers were discussed in the class,from which we were able to find where we are , when compared to others. Short cuts and how to remember the concept were also taught, which made us to be thorough in the concept before we leave the class. Flexible timings were there. And we were also allowed to attend the classes again , to revise. In the english session, we were taught how to remember words . This session also covered grammer. Tests were also conducted. Then the technical session was taught in a way which was easily understandable even by non IT students. The HR session made us to know , how to answer in a way the recruiter expects. Sample interview was conducted which made us confident to face the actual interview. I am very thankful to this center, which made me to know my potential.
+
+</div>
+
+<center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+Deepika - Placed in Infosys <br>
+Jaya Engg.College 2009 batch 
+ </p>
+<center><div class="textstyle">
+Hi I am Deepika i joined dream chasers during jan 08`.This is a place where i learned a lot of whats is life.Mr.Sriganesh Sir teaches each and every student how to solve problems in sec.The course material provided by him is very worthy.He has given privilege like every student this institution can attend classes again and again so he/she becomes very much sure of things.He motivates all by conducting interviews, GD`s and samples tests based on company question pattern & gives suggestions to all so that u can correct from the mistakes..... I am placed in infosys ,Thanks a lot Sir for training me . Dream chasers is a place where u can learn a lot, so friends join this institution and come out in flying colors.
+
+</div>
+
+<center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+Poornima Dayalan - Placed in HCL Tech and Virtusa<br>
+Dhanalakshmi College of Engg and Tech (2009 C.Sc)
+ </p>
+<center><div class="textstyle">
+I dont know whether its gods grace or my luck... With the idea from my seniors, i first came to know abt this aptitude class... i joined in my third year and the first class itself was really amazing.. before joinin d class i never had the idea about aps or placement... when i spoke to Sri Ganesh sir his words made my mind focused..its not onl me, who ever goes to his class their mind ll be riveted...his highly motivating words ll boost up energy...we solved 40 quests in each chapter...nearly 15 chaps.... other than aps he gave training in English n vocabulary.. he briefed about how GD ll take place and a mock HR n GD was also conducted by sir....we discussed basic HR questions and how to tackle an interview without fear... I am very happy and thankful to him..Sriganesh sir is an IIM alumni and a brilliant person who is helping many students like me to pursue their dreams...Which exactly suits his centre`s name.
+
+</div>
+
+<center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+Maheswari - Placed in Polaris<br> 
+Jaya Engg College 2009 batch 
+ </p>
+<center><div class="textstyle">
+The one thing I did for getting placed in a good company is joining Dream Chasers. I chased my dream and got it on october 25th. I got job in Polaris. Mr. SriGanesh sir helped me to get this. About aptitude session:I was just an average student in doing aptitude then. His shortcuts in solving a problem, which otherwise seems impossible to complete in a minute or less was easy to learn and to remember. About HR session:He taught me how to respond to a interviewer. Believe me this is the most interesting session. It helped me to answer the interviewer in a confident and impressive manner. The answers to the sticky questions of the interviewer is easy to deal with if one attended Mr. SriGanesh sirs` HR session.
+
+
+</div>
+
+<center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+Sakthi - Placed in CTS <br>
+Adhiparasakthi College of Engg & Tech(2009 batch ECE)
+ </p>
+<center><div class="textstyle">
+Hi everybody I have got placed in CTS in off campus conducted recently. Being a part of dream chasers , I feel proud to say that.the training which i got from the DREAM CHASERS made me to taste success.. thanks to our sir!..thanks for his training,valuable guidance and his devotion in bringing up our life to great heights
+
+</div>
+
+<center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+VidhyaLakshmi - Placed in HCL Tech <br>
+Dhanalakshmi College of Engg (2009 Batch C.Sc) 
+ </p>
+<center><div class="textstyle">
+Hi frenz.... am vidhya right now i got selected in HCL technologies....During my pre- final year i joined this training institute.He used to show individual attention to each and and every student in his batch and mould them and encourage them according to their talents.He constantly motivates us with his valuable experience and always insists us to push ourself hard with constant effort and dedication.Really i feel very proud and lucky to be Sriganesh sir`s student.All the best for the new joinees
+
+</div>
+
+<center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+Ramya - Placed in Infosys <br>
+Jerusalem College of Engg. (2009 Batch IT) 
+ </p>
+<center><div class="textstyle">
+Hi dis is Ramya...I got placed in d very first company INFOSYS. All credit goes to Sri Ganesh sir. Only after joining DREAM CHASERS ,i got more confidence.it was very easy during d interview ,since sir had already given more practice and more over i think dis s d only centre where u can get individual concentration.So join Dream Chasers n so ur dreams vil come true
+
+</div>
+
+<center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+Puja - Placed in Isoft 
+(SMIT 2008 batch) 
+ </p>
+<center><div class="textstyle">
+
+Hi, folks... am working for isoft. Dream chasers is an institute which gave me a lot of confidence to find a place in an IT firm. The support and guidance which sir gave us was really extraordinary... He solves more number of problems and gives individual attention. He makes us very clear with each and every topic we work on. Sri ganesh sir not only focuses on aptitude, but also on the HR questions. Since, i joined his class after my final sem exams... thought i was lost in the crowd. But, the way he motivated us was really brilliant. Gives a lot of confidence which is the most primary factor to fetch a job. I am really happy and proud be his student.
+
+</div>
+
+</div>
+
+<center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+Sandhya - Placed in Virtusa 
+Dhanalakshmi College of Engg (2008 batch) <br>
+ </p>
+<center><div class="textstyle">
+Hi I am Sandhya, have joined Dream chasers last year and now I got placed in Virtusa. I`m very happy about it. I have no words to explain the sincere efforts taken by Sriganesh sir. Whenever I remember him, the main thing that comes to my mind is his motivational words, confidence and the ability to take up challenges. After finishing my course in Dream Chasers, I was not only carrying the aptitude skills along with me, butalso raised with full confidence, which made me to get recruited in a nice company. Thanks a lot sir
+
+</div>
+
+
+
+<center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+Padma - Placed in L & T Infotech and Dexterity<br> 
+Jaya Engg College (2008 batch ECE)
+ </p>
+<center><div class="textstyle">
+Dream chasers is one of the best place to shape anyone`z future..i firmly believe this..i got placed in lnt infotech..Mr.sriganesh not only teaches how to solve the sums but also motivates, improve the confidence level and focusses on GD and interviews..i joined there on hearing my seniors advice..i found it worth..
+
+
+</div>
+
+
+
+<center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+Subha - Placed in CTS <br>
+Valliammai College of Engg (2008 batch )
+ </p>
+<center><div class="textstyle">
+Hi. I`m Subha. I joined Dream Chasers in 2007 for aptitude training and got my placement in CTS. I attended the class for 40 days, learnt a lot and gained enough confidence to face any typical interview. SriGanesh sir made me to understand every problem in the study material. Every class was interesting. He always paid special attention and focussed on every individual student. He is a dedicated, perfect and a very sincere teacher. When I completed the course I was confident of getting into a good company. I am proud to be a student of dream chasers institute and I can predict and wish for its tremendous growth
+
+
+</div>
+
+
+
+<center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+Navaneeth - Placed in TCS <br>
+Alagappa Chettiar College of Engg and Tech. (ACCET 2007)
+ </p>
+<center><div class="textstyle">
+
+Hi Dream Chasers, This is Navaneeth working for TCS, Mumbai. I know Sri Ganesh Sir for the past 5 years and I can assure you that you cannot find such a inspiring and motivating guy anywhere. His IIM C credentials speak of it. I joined Dream Chasers in the second batch for Placement training and MBA Verbal Ability. Believe me, the material he provided and the classes he conducted were really good. Some times it would be mind blowing. Apart from regular classes, I used to call him anytime and clarify my doubts and he was always there with the students whenever needed. The knowledge he imparts to us is really tremendous. I recommend everyone to join his CAT Classes to get the maximum attention unlike other Classes where individuality is rare. After-All everyone of us is a Dream Chaser. All the best to all the Dream Chasers.
+
+
+</div>
+
+<center><p class="cap" style="font-size: 20px;font-weight:200;color:#101c73;font-weight:700;font-family:Alegreya SC;text-align:center;text-transform: capitalize;">
+Arthi - Placed in Caritor <br>
+Jerusalem College of Engg.(2007 batch) 
+ </p>
+<center><div class="textstyle">
+"Dream chasers" helped me chase my dream in a rapid pace n made me achieve it too. I have been working with Keane Ind Pvt (Caritor) for nearly 2 yrs. If not for Sriganesh sir, am not sure if i would be in this position to write-up this line. Just a single class would make you feel so good to have gathered a great knowledge. Sir will not only teach u stuffs, but make you discover ur own potential. That`s an amazing part wher u feel so good n motivating when u realize tat u r capable!! And the one thing i admire in him is the way he has keen concern for each n evry single student`s progress (even fr his x-students) and the way he gives attention to each of them is tremendous which i feel is a very tough job n have never seen in any of my tutors before..
+
+</div>
+
+
+
+
+
+
+<div class="space"></div>
+<p class="cap2" style="font-size: 25px;color:#101c73;font-family:Alegreya SC;text-align:center;text-transform: capitalize;"><strong>RESULTS</strong></p>		
+	
+<ul style="list-style-type:square;">
+<div class="textstyle"><li>
+
+Kavitha Subramanian - Placed in Infosys, Cognizant solutions and Wipro. Crescent University
+<li>
+S.Aravindkumar - Placed in CTS SRM University kattankulathur campus 2015 batch
+<li>
+Monisha - Placed in HCL Panimalar engineering college (2011 - 2015 BATCH)
+<li>
+Divya - Placed in INFOSYS - SRM - 2015 batch
+<li>
+Deva- Placed in INFOSYS and WIPRO - SRM - 2015 batch
+<li>
+Jaya Priya Radhakrishnan - Placed in INFOSYS Srinivasa Institute of Engg & technology 2014 batch
+<li>
+Sathya Priya - Placed in TCS Adhiparasakthi Engineering College 2009 batch
+<li>
+Deepika - Placed in Infosys Jaya Engg.College 2009 batch
+<li>
+Poornima Dayalan - Placed in HCL Tech and Virtusa Dhanalakshmi College of Engg and Tech (2009 C.Sc)
+<li>
+Maheswari - Placed in Polaris Jaya Engg College 2009 batch
+<li>
+Sakthi - Placed in CTS Adhiparasakthi College of Engg & Tech(2009 batch ECE)
+<li>
+VidhyaLakshmi - Placed in HCL Tech Dhanalakshmi College of Engg (2009 Batch C.Sc)
+<li>
+Ramya - Placed in Infosys Jerusalem College of Engg. (2009 Batch IT)
+<li>
+Puja - Placed in Isoft (SMIT 2008 batch)
+<li>
+Sandhya - Placed in Virtusa Dhanalakshmi College of Engg (2008 batch)
+<li>
+Padma - Placed in L & T Infotech and Dexterity Jaya Engg College (2008 batch ECE)
+<li>
+Subha - Placed in CTS Valliammai College of Engg (2008 batch )
+<li>
+Navaneeth - Placed in TCS Alagappa Chettiar College of Engg and Tech. (ACCET 2007)
+<li>
+Arthi - Placed in Caritor Jerusalem College of Engg.(2007 batch)
+<li>
+Abirami	- Placed in TCS - Adhiparasakthi Engineering College
+<li>
+ Adish - Placed in Infosys - Jaya Engineering College
+<li>
+Afshan - Placed in TCS - Cresent Engg. College
+<li>
+Aishwarya - Placed in Virtusa - Dhanalakshmi College of Engg. And Tech
+<li>
+Aishwarya - Placed in Infosys - Cresent Engg. College
+<li>
+Akila - Placed in Infosys - Adhiparasakthi Engineering College
+<li>
+ Ambica - Placed in Virtusa - Dhanalakshmi College of Engg. And Tech
+<li>
+Anand - Placed in TCS - Cresent Engg. College
+<li>
+Anandhi - Placed in Temenos - Sridevi Women's Engineering College
+<li>
+Anita - Placed in Inautix - Cresent Engg. College
+<li>
+Aparna- Placed in Wipro - Valliammai Engineering College
+<li>
+Aravind	- Placed in CTS - Venkateshwara College of Engg.
+<li>
+Archana - Placed in TCS - Sastra University
+<li>
+Archana .K- Placed in Flextronics	- Bhajrang Engineering college
+<li>
+Aruleeshwari - Placed in TCS - Adhiparasakthi Engineering College</p>
+<li>
+Arundhati - Placed in CTS - Prince shri Venkateshwara Padmavathy Engg. College
+<li>
+ B.Gajalakshmi - Placed in Infosys - SSN College of Engg. And Technology
+<li>
+B.Navaneethakrishnan - Placed in TCS - Alagappa Chettiar College of Engg. And Technology
+<li>
+Bharathi - Placed in HCL Technolgies - Sri Venkateshwara College of Engineering
+<li>
+Bharathi B. - Placed in Wipro - Sastra University
+<li>
+Deepika	- Placed in Infosys - Jaya Engineering College
+<li>
+Deepika	- Placed in HCL Tech - Jaya Engineering College
+<li>
+Deepika	- Placed in Satyam L and T Infotech	- Dhanalakshmi College of Engg. And Tech
+<li>
+Deepthi - Placed in TCS - Easwari Engg. College
+<li>
+ Dhanasekaran - Placed in Caritor -	Jerusalem College of Engineering
+<li>
+Dillipushpam - Placed in Infosys - Jaya Engineering College
+<li>
+Divya - Placed in	Virtusa - Dhanalakshmi College of Engg. And Tech
+<li>
+ Divya Sulochana - Placed in Infosys - Jaya Engineering College
+<li>
+Divyashree - Placed in TCS - Madras Institute of Technology
+<li>
+Evangaline - Placed in Satyam - G.K.M College of Engg. And Technology
+<li>
+Ezhil - Placed in Wipro - Shanmuganathan Engg. College
+<li>
+Ganesh Mandal - Placed in Hughes Software System - Jerusalem College of Engineering
+<li>
+Gayathri - Placed in CTS - G.K.M College of Engg. And Technology
+<li>
+Geeta - Placed in Virtusa - Dhanalakshmi College of Engg. And Tech
+<li>
+Giridharan - Placed in TCS	- Dr.M.G.R Engineering College
+<li>
+Gopikrishna	- Placed in Infosys - Jaya Engineering College
+<li>
+Govardhini - Placed in Wipro - Adhiparasakthi college of Engineering
+<li>
+Hema - Placed in	Accenture - Dr.M.G.R Engineering College
+<li>
+Hema Abirami - Placed in Virtusa -	Dhanalakshmi College of Engg. And Tech
+<li>
+Ilakya - Placed in Infosys - Jaya Engineering College
+<li>
+Ilavarasi - Placed in CTS - Madras Institute of Technology
+<li>
+Jagan - Placed in	HCL Tech - Jaya Engineering College
+<li>
+Jai Bharath - Placed in Infosys - MNM Jain College
+<li>
+Janani - Placed in TCS - Adhiparasakthi Engineering College
+<li>
+Jayanthi - Placed in Cap Gemini - Venkateshwara College of Engg.
+<li>
+Jayapreethi - Placed in Patni - Mamallan Institute of Engineering
+<li>
+Jayashree - Placed in L and T Infotech - MNM Jain College
+<li>
+ Kalaiarasi- Placed in Wipro - Cresent Engg. College
+<li>
+Kamakshi - Placed in Polaris - Sriram Engineering College
+<li>
+Karpagam - Placed in CTS - Madras Institute of Technology
+<li>
+Karthick - Placed in Igate - Cresent Engg. College
+<li>
+ Karthick - Placed in	US Technologies - Meenakshi Sundarajan Engg. College
+<li>
+Karthikeyan - Placed in Infosys - Jaya Engineering College
+<li>
+Kokila - Placed in Infosys - Dhanalakshmi College of Engg. And Tech
+<li>
+ Lakshmi - Placed in	EDS - Jaya Engg. College
+<li>
+ M.Karthikeyan - Placed in TVS - Alagappa Chettiar College of Engg. And Technology
+<li>
+Madhumita - Placed in Caritor - Alagappa Chettiar College of Engg. And Technology
+<li>
+ Mahalakshmi - Placed in Infosys - Vel Multimedia
+<li>
+ Manjusha - Placed in HCL Technologies - Dr.M.G.R Engineering College
+<li>
+ Meenakshi - Placed in Infosys - Jaya Engineering College
+<li>
+ Mudassir - Placed in Igate - Cresent Engg. College
+<li>
+ Murali - Placed in Iflex - Dhanalakshmi College of Engg. And Tech
+<li>
+ N. Dhivya luxmi - Placed in Infosys - GuruNanak College
+<li>
+ Naga Sachin kumar - Placed in Caritor - Alagappa Chettiar College of Engg. And Technology
+<li>
+ Nagashri - Placed in CTS - Madras Institute of Technology
+<li>
+ Namashivayam - Placed in Infosys - St. Peters Engineering College
+<li>
+ Nandhini - Placed in Syntel - Adhiparasakthi Engineering College
+<li>
+ Nandhini - Placed in L and T Infotech - Adhiparasakthi Engineering College
+<li>
+ Nandini - Placed in TCS - Alagappa Chettiar College of Engg. And Technology
+<li>
+ Narendran - Placed in TCS - Alagappa Chettiar College of Engg. And Technology
+<li>
+ Nirmal	- Placed in CTS - Valliammai Engineering College
+<li>
+ Nithya - Placed in HCL Tech - Mamallan Institute of Engineering
+<li>
+P.Vinoth Kannan - Placed in TCS - Alagappa Chettiar College of Engg. And Technology
+<li>
+Padma - Placed in L and T Infotech - Jaya Engineering College
+<li>
+ Padma Prasad - Placed in TCS - Adhiparasakkthi College of Engineering
+<li>
+Pavitra - Placed in Syntel - Jaya Engineering College
+<li>
+Poornima - Placed in Virtusa - Dhanalakshmi College of Engg. And Tech
+<li>
+Prabhagaran N - Placed in Inautix - SSN College of Engg. And Technology
+<li>
+Prasad K - Placed in TCS - Alagappa Chettiar College of Engg. And Technology
+<li>
+Prasanna kumar - Placed in Satyam Computers - Jaya Engineering College
+<li>
+Praveena - Placed in	HCL Tech - Jaya Engineering College
+<li>
+Preethi - Placed in TCS - Easwari Engg. College
+<li>
+Premkumar - Placed in Syntel - Jaya Engineering College
+<li>
+ Priya - Placed in CTS - Sriram Engineering College
+<li>
+Priya B - Placed in CTS - Jaya Engineering College
+<li>
+Priyanka - Placed in Infosys - Jaya Engineering College
+<li>
+Puja - Placed in Isoft - SMIT
+<li>
+R.Karthikeyan - Placed in TCS - Alagappa Chettiar College of Engg. And Technology
+<li>
+R.Ramesh	- Placed in TCS - Alagappa Chettiar College of Engg. And Technology
+<li>
+Radhika - Placed in Wipro - Jaya Engineering College
+<li>
+Rajalakshmi - Placed in TCS - Adhiparasakthi Engineering College
+<li>
+ Rajarajeshwari - Placed in Wipro - SSN College of Engg. And Tech.
+<li>
+Rajesh - Placed in CTS - Valliammai Engineering College
+<li>
+Ramakrishnan - Placed in HCL Technologies - Meenakshi Sundarajan Engg. College
+<li>
+Ramkumar - Placed in TCS - Adhiparasakthi College of Engineering
+<li>
+ Ramya - Placed in Infosys - Jerusalem College of Engg.
+<li>
+Ranjani - Placed in TCS - Cresent Engg. College
+<li>
+ Renuka - Placed in CTS - Dhanalakshmi college of Engg.
+<li>
+ S.Krishnaswamy - Placed in CTS - Alagappa Chettiar College of Engg. And Technology
+<li>
+ Sangeetha - Placed in Inautix - Sairam Engg. College
+<li>
+Sangeetha S - Placed in Wipro - Jaya Engineering College
+</ul>
+AND MANY MORE STUDENTS....
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="space"></div> 
+	<div class="footer">  
+<button class="btn" onclick="location.href='results.html';">FOR MORE FEEDBACKS</button>
+<div class="foot"> © 2006 Dream Chaser | Design by dreamchaser
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
